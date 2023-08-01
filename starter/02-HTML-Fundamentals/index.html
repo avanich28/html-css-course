@@ -1,0 +1,173 @@
+<!-- NOTE Tell the browser that this document uses html -->
+<!DOCTYPE html>
+<!-- html is always a parent element. -->
+<!-- lang attribute - Specify language for this document -->
+<html lang="en">
+  <!-- NOTE Things that are not visible in the browser. -->
+  <head>
+    <!-- Meta data means data about the data  -->
+    <!-- UTF-8 is specify for this character set attribute. -->
+    <!-- UTF-8 is all the simple characters that we use in the English language. -->
+    <meta charset="UTF-8" />
+    <title>The Basic Language of the Web: HTML</title>
+  </head>
+
+  <!-- NOTE Browser doesn't care the indentation, but it helps the code readable. -->
+  <!-- body has only 2 direct child - header and article -->
+  <body>
+    <!-- <h1>The Basic Language of the Web: HTML</h1>
+    <h2>The Basic Language of the Web: HTML</h2>
+    <h3>The Basic Language of the Web: HTML</h3>
+    <h4>The Basic Language of the Web: HTML</h4>
+    <h5>The Basic Language of the Web: HTML</h5>
+    <h6>The Basic Language of the Web: HTML</h6> -->
+
+    <!-- NOTE header is the top part of document -->
+    <header>
+      <!-- Primary heading -->
+      <!-- NOTE Each page should have only 1 primary heading (h1) -->
+      <!-- The other type of heading can have multiple of them. -->
+      <h1>📘 The Code Magazine</h1>
+      <nav>
+        <!-- NOTE href creates a link, otherwise is not a link at all -->
+        <a href="blog.html">Blog</a>
+        <!-- # link is go back to the top of the page. -->
+        <a href="#">Challenge</a>
+        <a href="#">Flexbox</a>
+        <a href="#">CSS Grid</a>
+      </nav>
+    </header>
+
+    <article>
+      <header>
+        <!-- Secondary heading -->
+        <h2>The Basic Language of the Web: HTML</h2>
+        <img
+          src="./img/laura-jones.jpg"
+          alt="Headshot of Laura Jones"
+          width="50"
+          height="50"
+        />
+        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <!-- b - bold - not good practice, it is an older html and don't have specific meaning. -->
+        <!-- NOTE string - bold - have meaning which is an semantic html -->
+        <!-- If there are not closing tag, ow will html know which element it should display? -->
+        <!-- NOTE Attributes are basically pieces of data which we can use to describe elements -> src attribute -->
+        <!-- alt attribute - alternative text
+          1. allow engine such as google chrome to actually know what is in the image)
+          2. allow blind people to use a website (have screen reader read the alternative text) -->
+        <!-- NOTE If the file name is wrong, html will show the alt text. -->
+        <img
+          src="./img/post-img.jpg"
+          alt="HTML code on a screen"
+          width="500"
+          height="200"
+        />
+      </header>
+
+      <p>
+        All modern websites and web applications are built using three
+        <em>fundamental</em>
+        technologies: HTML, CSS and JavaScript. These are the languages of the
+        web.
+      </p>
+      <!-- i - italic - not good practice -->
+      <!-- NOTE em - emphasize text -->
+      <p>
+        In this post, let's focus on HTML. We will learn what HTML is all about,
+        and why you too should learn it.
+      </p>
+      <h3>What is HTML?</h3>
+      <p>
+        HTML stands for <strong>H</strong>yper<strong>T</strong>ext
+        <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
+        language that web developers use to structure and describe the content
+        of a webpage (not a programming language).
+      </p>
+      <p>
+        HTML consists of elements that describe different types of content:
+        paragraphs, links, headings, images, video, etc. Web browsers understand
+        HTML and render HTML code as websites.
+      </p>
+      <p>In HTML, each element is made up of 3 parts:</p>
+      <!-- Parent element -->
+      <ol>
+        <!-- Child Element -->
+        <li>The opening tag</li>
+        <li>The closing tag</li>
+        <li>The actual element</li>
+      </ol>
+      <!-- target="_blank" - open new tap -->
+      <p>
+        You can learn more at
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          target="_blank"
+          >MDN Web Docs.</a
+        >
+      </p>
+      <h3>Why should you learn HTML?</h3>
+      <p>
+        There are countless reasons for learning the fundamental language of the
+        web. Here are 5 of them:
+      </p>
+      <ul>
+        <li>To be able to use the fundamental web dev language</li>
+        <li>
+          To hand-craft beautiful websites instead of relying on tools like
+          Worpress or Wix
+        </li>
+        <li>To build web applications</li>
+        <li>To build web applications</li>
+        <li>To impress friends</li>
+        <li>To have fun 😃</li>
+      </ul>
+      <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <!-- NOTE The aside element is usually used for some secondary information that complements the information in the main part of the page. -->
+    <aside>
+      <h2>Related posts</h2>
+      <ul>
+        <li>
+          <img
+            src="./img/related-1.jpg"
+            alt="Person programming"
+            height="75"
+            width="75"
+          />
+          <a href="#">How to Learn Web Development</a>
+          <p>By Jonas Schmedtmann</p>
+        </li>
+        <li>
+          <img
+            src="./img/related-2.jpg"
+            alt="Lightning"
+            height="75"
+            width="75"
+          />
+          <a href="#">The Unknown Powers of CSS</a>
+          <p>By Jim Dillon</p>
+        </li>
+        <li>
+          <img
+            src="./img/related-3.jpg"
+            alt="Javascript code"
+            height="75"
+            width="75"
+          />
+          <a href="#">Why Javascript is Awesome</a>
+          <p>By Matilda</p>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- IMPT html entity ex. &copy; -->
+    <footer>Copyright &copy; 2027 by The Code Magazine.</footer>
+  </body>
+</html>
+
+<!-- Topic: A Note on Semantic HTML -->
+<!-- IMPT Semantics mean that certain elements have actually a meaning or a purpose attached to them. -->
+<!-- NOTE What elements actually means or what they stands for?-->
+<!-- div is the box without any meaning (opposite to nav)-->
